@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+    body {
+        background: linear-gradient(135deg, #ff9a9e, #fbedea); 
+        font-family: Arial, sans-serif;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    /* Navbar Style */
+    .navbar {
+        background-color: #8b3b3b; 
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 0 15px;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .navbar ul li a:hover {
+        color: #ff9379;
+        text-decoration: underline;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .AT-pic {
+        width: 15px;
+        height: 15px;
+    }
+    h1 {
+        font-size: 2rem;
+        margin: 10px 0;
+        color: rgb(43, 36, 36);
+    }
+    h2 {
+        color: rgb(246, 63, 136);
+    }
+    em {
+        font-style: italic;
+        color: #4f4e4e;
+    }
+    p {
+        margin: 10px 0;
+    }
+    hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 20px 0;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+    a {
+        color: #1561ed;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    .divider {
+        border: none;
+        height: 2px;
+        background-color: brown;
+        margin: 20px 0;
+    }
+    .text-box {
+        border: 5px solid #fa7095; 
+        border-radius: 10px; 
+        background-color: #ffffff; 
+        padding: 20px; 
+        margin: 20px auto; 
+        max-width: 600px; 
+        font-family: 'Segoe UI', Tahoma, sans-serif; 
+        font-size: 1.1rem; 
+        color: #333; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">My Resume</div>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <img src="Profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Chanyapat Somboonsinchai</h1>
+    <em>Major: Artificial Intelligence Computer Engineering</em>
+    <p>Engineering and Technology, <a href="http://pim.ac.th" target="_blank">Panyapiwat Institute of Management</a></p>
+</header>
+
+<!-- About Section -->
+<div id="about" class="text-box">
+    <section>
+        <h2>About Me</h2>
+        <hr class="divider">
+        <p>I’m a friendly person, can communicate with companions and can work as a team.</p>
+    </section>
+</div>
+
+<!-- Education Section -->
+<div id="education" class="text-box">
+    <section>
+        <h2>Education</h2>
+        <hr class="divider">
+        <ul>
+            <li><strong>2020 - 2023 :</strong> Ratchaborikanukroh School (English Program)</li>
+            <li><strong>2023 - Now :</strong> Panyapiwat Institute of Management Bachelor of Computer Engineering and Artificial Intelligence</li>
+        </ul>
+    </section>
+</div>
+
+<!-- Experience Section -->
+<div id="experience" class="text-box">
+    <section>
+        <h2>Experience</h2>
+        <hr class="divider">
+        <ul>
+            <strong>Gosoft Thailand / Trainee, IT Support/Helpdesk</strong>
+            <p>March 2024 - May 2024</p>
+            <li>Listen and summarize the problems reported by customers.</li>
+            <li>Provide troubleshooting for customers.</li>
+        </ul>
+    </section>
+</div>
+
+<!-- Skills Section -->
+<div id="skills" class="text-box">
+    <section>
+        <h2>Skills</h2>
+        <hr class="divider">
+        <ul>
+            <li>Basic Java</li>
+            <li>Java OOP</li>
+            <li>HTML, CSS</li>
+        </ul>
+    </section>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="text-box">
+    <section>
+        <h2>Contact</h2>
+        <hr class="divider">
+        <p>Email: 6652300079 <img src="At.png" alt="AT Picture" class="AT-pic"> stu.pim.ac.th</p>
+        <p>Address: xxx China Beijing 0000</p>
+        <p>Phone: 091-9919991</p>
+        <a href="https://github.com/ChanyapatZee/MyResume.git" target="_blank">My GitHub Profile</a>
+    </section>
+</div>
+
+</body>
+</html>
